@@ -1,0 +1,161 @@
+:root {
+  --good-aqi-color: #b0e767;
+  --medium-aqi-color: #fe9b56;
+  --bad-aqi-color: #fe6a69;
+  --current-aqi-color: var(--good-aqi-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background: #43cea2;
+  background: linear-gradient(45deg, #185a9d, #43cea2);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  width: auto;
+}
+
+.card-weather {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20em;
+  /* height: 20vh; */
+  color: #fff;
+  box-shadow: 0 10px 10px 0 #515151;
+}
+
+.card-aqi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.location {
+  margin: 30px 0;
+}
+
+.city {
+  margin: 0;
+  font-size: 3em;
+}
+
+.state {
+  margin-top: 0;
+}
+
+.weather {
+  background: orange;
+  border: 1px solid orange;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.weather > h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
+.info,
+.aqi-detail {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+  color: #515151;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.info,
+.aqi-detail > * {
+  padding: 8px 15px;
+}
+
+.info,
+.aqi-detail > *:last-child {
+  border: none;
+}
+
+.aqi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  margin-left: 30px;
+  height: 100%;
+  background-color: var(--current-aqi-color);
+  border-radius: 10px;
+  box-shadow: 0 10px 10px 0 #515151;
+}
+
+.aqi > h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
+form {
+  position: relative;
+  max-width: 100%;
+}
+
+form input {
+  border: 0;
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 15px 30px;
+  width: 50%;
+}
+
+button {
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(1.05);
+}
+button:active {
+  transform: scale(0.95);
+}
+
+form > button {
+  background-color: orange;
+  border: 0;
+  border-radius: 50px;
+  padding: 13px 30px;
+  color: #fff;
+  right: 2px;
+  top: 2px;
+}
+
+@media screen and (max-width: 555px) {
+  .card {
+    display: block;
+  }
+  .card-weather {
+    width: auto;
+  }
+  .card-aqi {
+    margin-top: 30px;
+  }
+  .aqi {
+    margin: 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>CountDown Timer</title>
+  </head>
+  <body>
+    <h1>CountDown Timer</h1>
+    <div class="countdown" id="countdown">
+      <div class="input">
+        <form action="" id="countdown-form">
+          <input type="date" class="date-picker" id="date-picker" />
+          <button type="submit">นับถอยหลัง</button>
+        </form>
+      </div>
+      <div class="show-time">
+        <div class="time">
+          <h2 id="days">00</h2>
+          <small>days</small>
+        </div>
+        <div class="time">
+          <h2 id="hours">00</h2>
+          <small>hours</small>
+        </div>
+        <div class="time">
+          <h2 id="minutes">00</h2>
+          <small>minute</small>
+        </div>
+        <div class="time">
+          <h2 id="seconds">00</h2>
+          <small>seconds</small>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

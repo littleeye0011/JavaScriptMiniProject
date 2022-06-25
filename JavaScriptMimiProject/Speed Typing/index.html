@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speed Typing</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/fdc7c658cc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <button id="level-btn" class="level-btn">
+      <i class="fa-solid fa-gear"></i>
+    </button>
+    <div id="settings" class="setting">
+      <form id="level-form">
+        <label>Level:</label>
+        <select id="level-select">
+          <option value="easy" selected>ง่าย</option>
+          <option value="medium">ปานกลาง</option>
+          <option value="hard">ยาก</option>
+        </select>
+      </form>
+    </div>
+    <div class="container">
+      <h2>เกมพิมพ์เร็ว | Speed Typing</h2>
+      <h1 id="word" class="word"></h1>
+      <input
+        type="text"
+        id="text"
+        autocomplete="off"
+        placeholder="พิมพ์ตามตัวอักษร"
+      />
+      <button id="start-btn" class="start-btn">เริ่มเกม</button>
+      <p class="time-container">เวลา <span id="time"></span> วินาที</p>
+      <p class="score-container"><span id="score"></span> คะแนน</p>
+      <div id="gameover-container" class="gameover-container"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
